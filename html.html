@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>中山大学肿瘤防治中心结直肠外科招生简章</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Microsoft YaHei", "Helvetica Neue", Arial, sans-serif;
+        }
+        
+        body {
+            background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+            color: #333;
+            line-height: 1.6;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        }
+        
+        /* 标题背景设计 */
+        .title-background {
+            background: linear-gradient(120deg, #1a6fa0 0%, #004d80 100%);
+            color: white;
+            padding: 40px 30px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .title-background::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url('guide-third-bg.jpg');
+            background-size: cover;
+            background-position: center;
+        }
+        
+        .logo-title {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 20px;
+            position: relative;
+        }
+        
+        .logo {
+            width: 100px;
+            height: 100px;
+            background: white;
+            border-radius: 50%;
+            margin-right: 25px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        }
+        
+        .logo i {
+            font-size: 40px;
+            color: #004d80;
+        }
+        
+        .title-text h1 {
+            font-size: 32px;
+            margin-bottom: 10px;
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+        }
+        
+        .title-text .subtitle {
+            font-size: 18px;
+            opacity: 0.9;
+        }
+        
+        .stats {
+            display: flex;
+            justify-content: center;
+            margin-top: 30px;
+            flex-wrap: wrap;
+            position: relative;
+        }
+        
+        .stat-item {
+            padding: 15px 25px;
+            margin: 10px;
+            background: rgba(255, 255, 255, 0.15);
+            border-radius: 8px;
+            backdrop-filter: blur(5px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            min-width: 200px;
+            text-align: center;
+        }
+        
+        .stat-item h3 {
+            font-size: 24px;
+            margin-bottom: 5px;
+        }
+        
+        /* 内容区域样式 */
+        .content {
+            padding: 40px;
+        }
+        
+        .section {
+            margin-bottom: 40px;
+        }
+        
+        h2 {
+            color: #004d80;
+            border-bottom: 2px solid #eaeaea;
+            padding-bottom: 15px;
+            margin-bottom: 25px;
+            font-size: 26px;
+            display: flex;
+            align-items: center;
+        }
+        
+        h2 i {
+            margin-right: 15px;
+            color: #1a6fa0;
+        }
+        
+        h3 {
+            color: #0066cc;
+            margin: 20px 0 15px;
+            font-size: 20px;
+        }
+        
+        p {
+            margin-bottom: 18px;
+            text-align: justify;
+        }
+        
+        .bilingual {
+            margin-bottom: 30px;
+            border-left: 4px solid #e8f4ff;
+            padding-left: 20px;
+        }
+        
+        .chinese {
+            margin-bottom: 10px;
+        }
+        
+        .english {
+            color: #555;
+            font-style: italic;
+            margin-bottom: 15px;
+            padding-left: 15px;
+            border-left: 2px solid #eaeaea;
+        }
+        
+        ul {
+            list-style-type: none;
+            padding-left: 20px;
+        }
+        
+        li {
+            margin-bottom: 15px;
+            position: relative;
+            padding-left: 30px;
+        }
+        
+        li:before {
+            content: "•";
+            color: #004d80;
+            font-weight: bold;
+            font-size: 20px;
+            position: absolute;
+            left: 0;
+            top: -2px;
+        }
+        
+        .badges {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            margin: 25px 0;
+        }
+        
+        .badge {
+            background-color: #f0f7ff;
+            border: 1px solid #d0e3ff;
+            border-radius: 8px;
+            padding: 20px;
+            flex: 1 0 calc(50% - 20px);
+            min-width: 280px;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        
+        .badge:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0, 77, 128, 0.1);
+        }
+        
+        .position-box {
+            background-color: #e8f4ff;
+            border-radius: 10px;
+            padding: 25px;
+            margin: 25px 0;
+            border-left: 5px solid #004d80;
+        }
+        
+        .requirements {
+            background-color: #f9f9f9;
+            padding: 25px;
+            border-radius: 10px;
+            margin: 25px 0;
+            border: 1px dashed #ccc;
+        }
+        
+        .benefits {
+            background-color: #e8f6ef;
+            padding: 25px;
+            border-radius: 10px;
+            margin: 25px 0;
+            border-left: 5px solid #28a745;
+        }
+        
+        .btn {
+            display: inline-block;
+            background: linear-gradient(120deg, #1a6fa0 0%, #004d80 100%);
+            color: white;
+            padding: 15px 35px;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: bold;
+            margin-top: 20px;
+            transition: all 0.3s;
+            box-shadow: 0 5px 15px rgba(0, 77, 128, 0.3);
+        }
+        
+        .btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 20px rgba(0, 77, 128, 0.4);
+        }
+        
+        footer {
+            text-align: center;
+            margin-top: 50px;
+            padding: 30px;
+            color: #666;
+            font-size: 14px;
+            background: #f8f9fa;
+            border-top: 1px solid #eaeaea;
+        }
+        
+        @media (max-width: 768px) {
+            .logo-title {
+                flex-direction: column;
+                text-align: center;
+            }
+            
+            .logo {
+                margin-right: 0;
+                margin-bottom: 20px;
+            }
+            
+            .badge {
+                flex: 1 0 100%;
+            }
+            
+            .title-text h1 {
+                font-size: 26px;
+            }
+            
+            .title-text .subtitle {
+                font-size: 16px;
+            }
+            
+            .content {
+                padding: 25px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- 标题背景区域 -->
+        <div class="title-background">
+            <div class="logo-title">
+                <!-- <div class="logo">
+                    <i class="fas fa-hospital-symbol"></i>
+                </div> -->
+                <div class="title-text">
+                    <h1>中山大学肿瘤防治中心结直肠外科招生简章</h1>
+                    <p class="subtitle">Department of Colorectal Surgery Recruitment Brochure</p>
+                </div>
+            </div>
+            
+            <!-- <div class="stats">
+                <div class="stat-item">
+                    <h3>1964年</h3>
+                    <p>成立年份</p>
+                </div>
+                <div class="stat-item">
+                    <h3>70+</h3>
+                    <p>病床数量</p>
+                </div>
+                <div class="stat-item">
+                    <h3>24.9</h3>
+                    <p>期刊影响因子</p>
+                </div>
+                <div class="stat-item">
+                    <h3>4名</h3>
+                    <p>两院院士</p>
+                </div>
+            </div> -->
+        </div>
+
+        <div class="content">
+            <div class="section">
+                <h2><i class="fas fa-hospital"></i> 医院介绍 / Hospital Introduction</h2>
+                <div class="bilingual">
+                    <p class="chinese">中山大学肿瘤防治中心（中山大学附属肿瘤医院、中山大学肿瘤研究所）成立于1964年3月，是新中国成立最早的四所肿瘤医院之一。中心是全国规模最大、学术力量最雄厚的集医疗、教学、科研、预防于一体的肿瘤学基地之一，承担国家肿瘤防治重任，在全国尤其是华南地区及港澳台的肿瘤防治工作中发挥着龙头作用，学科地位、综合实力居全国领先水平。</p>
+                    <p class="english">Sun Yat-sen University Cancer Center (SYSUCC), also known as The Affiliated Cancer Hospital and Institute of Sun Yat-sen University, was established in March 1964. It is one of the earliest four cancer hospitals founded in New China. As one of the largest and most academically robust oncology bases in China integrating medical care, teaching, research, and prevention, SYSUCC shoulders the significant national responsibility of cancer prevention and treatment. It plays a leading role in cancer control across the nation, particularly in South China, Hong Kong, Macao, and Taiwan, with its disciplinary status and comprehensive strength ranking among the top tier in the country.</p>
+                </div>
+                
+                <div class="bilingual">
+                    <p class="chinese">中心主办英文学术期刊《Cancer Communications》（《癌症通讯》），该刊多次入选"百种中国杰出学术期刊"和"中国最具国际影响力学术期刊"；2014年被科学引文索引（SCI）收录，目前影响因子为24.9（JCR 2024），在JCR肿瘤学分类中位于Q1区，在亚洲综合肿瘤学领域学术期刊中排名第一。</p>
+                    <p class="english">The center publishes the English academic journal *Cancer Communications*, which has been repeatedly selected as one of the "Top 100 Outstanding Chinese Academic Journals" and "China's Most Influential International Academic Journals." It was indexed by Science Citation Index (SCI) in 2014 and currently holds an Impact Factor of 24.9 (JCR 2024). It ranks in the Q1 quadrant in the JCR oncology category and is the No. 1 academic journal in the field of comprehensive oncology in Asia.</p>
+                </div>
+            </div>
+
+            <div class="section">
+                <h2><i class="fas fa-stethoscope"></i> 结直肠外科介绍 / Introduction to the Department of Colorectal Surgery</h2>
+                <div class="bilingual">
+                    <p class="chinese">结直肠外科成立于2009年，其前身为腹科的一部分。在万德森教授和潘志忠主任的领导下，全科上下齐心协力，取得了显著成就。</p>
+                    <p class="english">The Department of Colorectal Surgery was established in 2009, which used to be part of the Department of Abdominal Surgery. Under the leadership of Professor Desen Wan and Director Zhizhong Pan, the whole department has made remarkable achievements with concerted efforts.</p>
+                </div>
+                
+                <div class="bilingual">
+                    <p class="chinese">该科目前设有两个病区，共70张床位，并拥有造口治疗室、肛门直肠测压室和研究实验室。目前，它已成为中国最大、最具影响力的结直肠癌医疗中心之一。</p>
+                    <p class="english">The department now has two sections, 70 beds, an ostomy treatment room, an anorectal manometry room, and a research laboratory. At present, it has become one of the largest and most influential medical centers for colorectal cancer in China.</p>
+                </div>
+                
+                <h3><i class="fas fa-award"></i> 科室称号 / Department Titles</h3>
+                <div class="badges">
+                    <div class="badge">中国抗癌协会结直肠癌培训中心<br>The colorectal cancer training center of the Chinese Anti-cancer Association</div>
+                    <div class="badge">国家结直肠癌多学科诊疗（MDT）示范单位<br>The national demonstration unit of the colorectal cancer multidisciplinary team (MDT)</div>
+                    <div class="badge">中国医师协会腹腔镜外科医师培训中心<br>The training center of laparoscopic surgeons of the Chinese Medical Doctor Association</div>
+                    <div class="badge">全国造口治疗师（ET）培训中心<br>The national training center of enterostomal therapist (ET) nurses</div>
+                    <div class="badge">华南地区结直肠癌登记（随访）中心单位<br>The central unit of colorectal cancer registration (follow-up) in South China</div>
+                    <div class="badge">广东省临床重点专科<br>The key clinical specialty of Guangdong Province</div>
+                </div>
+            </div>
+
+            <div class="section">
+                <h2><i class="fas fa-briefcase"></i> 招聘岗位 / Open Positions</h2>
+                <div class="position-box">
+                    <h3>主治医师：3名</h3>
+                    <p>Attending Physicians: 3</p>
+                </div>
+
+                <h3><i class="fas fa-graduation-cap"></i> 招聘条件 / Qualifications</h3>
+                <div class="requirements">
+                    <ul>
+                        <li>具备独立主刀结直肠癌手术的经验；<br><span class="english">Have experience in independently performing colorectal cancer surgery as the primary surgeon;</span></li>
+                        <li>能够全程使用英语或中文进行学术沟通；<br><span class="english">Be capable of conducting academic communication entirely in English or Chinese;</span></li>
+                        <li>遵纪守法、既往业绩良好，恪守学术道德规范，无学术不端行为，身体健康，具有较强的学术潜力、科研创新能力和团队合作精神。<br><span class="english">Abide by laws and regulations, have a good track record, adhere to academic ethics, have no record of academic misconduct, be in good health, and possess strong academic potential, scientific research innovation capability, and team spirit.</span></li>
+                        <li>年龄原则上不超过36周岁，特别优秀者可适当放宽条件，最高不超过40周岁。<br><span class="english">Age should (in principle) not exceed 36 years old; conditions may be appropriately relaxed for exceptionally outstanding candidates, with the maximum age not exceeding 40 years old.</span></li>
+                    </ul>
+                </div>
+
+                <h3><i class="fas fa-book-open"></i> 进修方向 / Training Focus</h3>
+                <div class="bilingual">
+                    <p class="chinese">学习交流中心的结直肠癌常规诊治及围手术期处理。</p>
+                    <p class="english">Learning and exchanging knowledge on the conventional diagnosis, treatment, and perioperative management of colorectal cancer at the center.</p>
+                </div>
+
+                <h3><i class="fas fa-gift"></i> 待遇 / Benefits</h3>
+                <div class="benefits">
+                    <p class="chinese">提供住宿和一次往返机票。</p>
+                    <p class="english">Accommodation and one round-trip air ticket are provided.</p>
+                </div>
+            </div>
+
+            <div class="section">
+                <h2><i class="fas fa-paper-plane"></i> 申请方式 / How to Apply</h2>
+                <p>请访问医院官方网站获取更多信息并提交申请：</p>
+                <p>Please visit the hospital's official website for more information and to submit your application:</p>
+                <a href="https://english.sysucc.org.cn/index_25.aspx?lcid=104" class="btn">访问官网 / Visit Website</a>
+            </div>
+        </div>
+
+        <footer>
+            <p>© 2024 中山大学肿瘤防治中心 版权所有</p>
+            <p>Sun Yat-sen University Cancer Center © 2024 All Rights Reserved</p>
+        </footer>
+    </div>
+</body>
+</html>
